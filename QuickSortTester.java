@@ -2,7 +2,7 @@ public class QuickSortTester{
 
     public static int[] buildArray(int size){
 	int[] retArr= new int [size];
-	for(int i=0; i<s;i++){
+	for(int i=0; i<size;i++){
 	    retArr[i]=i;
 	}
 	return retArr;
