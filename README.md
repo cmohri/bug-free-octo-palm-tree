@@ -42,7 +42,14 @@ Clara Mohri
 
 **
 
+## Further Inquiry 
+  We found the results for the randomly ordered array to be strange because of the difference in running time relative to the sorted and reverse order list running times. Therefore, we decided to test randomly ordered arrays in a different way as well. We created a constant array of size 10,000, and a test array. The test array copied increasing amounts of items from the constant array, and then sorted those items. We ran this twenty times for each size (each time resetting the test array) and recorded the mean running time for each size. 
+  
+  The plot below displays data for ten different arrays, each following the above descrived methodology.  
 ![alt text](https://github.com/cmohri/bug-free-octo-palm-tree/blob/master/samearraylargersize.png)
+
+Here we see that the data does in fact resemble the randomly arranged arrays plot as shown in the Results section, and that it is neither a linear function nor a n^2 function.
+
 
 ## Running Time Classification
   Because of our randomized pivot point, there is no best case. There is not best case because we don't know how the pivot point will relate to the array that our quicksort method is sorting. 
