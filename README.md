@@ -10,7 +10,7 @@ Clara Mohri
 # L #01: What Does the Data Say?
 
 ## Background
-  Quicksort is a a sorting alorithm that sorts recursively. It uses a helper method, partition, which takes as arguments the array, a left bound index, *a*, right bound index, *b*. Partition then randomly generates a *pivot point*, which is an index between a and b. Then, it will place the pivot point in its final resting position, and return the number of items in the array to the left of pivot point, which are all smaller than the pivot point. Using this, we can now break up the array into two smaller subsections: one to the left of the pivot point, and one to the right of the pivot point. Recursively, quicksort will keep sorting smaller subsections of the array for as long as the left bound is smaller than the right bound, resulting is a sorted array.
+  Quicksort is a a sorting alorithm that sorts recursively. It uses a helper method, partition, which takes as arguments the array, a left bound index, *a*, right bound index, *b*. Partition then randomly generates a *pivot point*, which is an index between a and b. Then, it will place the pivot point in its final resting position, and return the number of items in the array to the left of pivot point, which are all smaller than the pivot point. Using this, we can now look at two smaller subsections: one to the left of the pivot point, and one to the right of the pivot point. Recursively, quicksort will keep sorting smaller subsections of the array for as long as the left bound is smaller than the right bound, resulting is a sorted array.
 
 ## Hypothesis
 
