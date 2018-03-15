@@ -26,23 +26,25 @@ Clara Mohri
 ## Results 
   The raw data results can be founded in the three .csv files contained in this repo. Here are the plots of the data, all together and then plotted separately: 
 
-*Chart of All Data*
+### *Chart of All Data*
 
 ![alt text](https://github.com/cmohri/bug-free-octo-palm-tree/blob/master/AllTimes.png) 
 
 This graph shows an increased running time for a reverse sorted array, a lesser running time for an ordered array, and a comparatively very low running time for a random order array. As we can see, in this order, they start with being very close to O(n^2) based on the R^2 for their polynomial trendlines, and then stray until a random order array has an R^2 for a polynomial trend line that is 0.8641, indicating that it clearly does not follow such a trend.
 
-*Chart of Reverse Order Arrays*
+### *Chart of Reverse Order Arrays*
 
 ![alt text](https://github.com/cmohri/bug-free-octo-palm-tree/blob/master/Reversetimes.png)
 
 An analysis of the reverse ordered arrays shows that this is very similar to O(n^2).
-*Chart of Ordered Arrays*
+
+### *Chart of Ordered Arrays*
 
 ![alt text](https://github.com/cmohri/bug-free-octo-palm-tree/blob/master/SortedOrder.png)
 
 Sorted order is apparently also very close to O(n^2), but not as close, and faster than O(n^2) as well, as seen when we compare it to the above graph. 
-*Chart of Randomly Arranged Arrays*
+
+### *Chart of Randomly Arranged Arrays*
 
 ![alt text](https://github.com/cmohri/bug-free-octo-palm-tree/blob/master/Shufflegraph.png)
 
