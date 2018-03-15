@@ -40,6 +40,10 @@ Clara Mohri
 
 ![alt text](https://github.com/cmohri/bug-free-octo-palm-tree/blob/master/Shufflegraph.png)
 
+**
+
+![alt text](https://github.com/cmohri/bug-free-octo-palm-tree/blob/master/samearraylargersize.png)
+
 ## Running Time Classification
   Because of our randomized pivot point, there is no best case. There is not best case because we don't know how the pivot point will relate to the array that our quicksort method is sorting. 
   However, there does seem to be a bad case running time of O(n^2), as evidenced by the reverse-order arrays that overall were very much resembling n^2 in their plot, and also based on the trendline which has an R^2 of nearly 1. This could be because the pivot point chosen at first having to swap every single item from one of it's sides to the other, and then continuing. 
