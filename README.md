@@ -1,11 +1,11 @@
 bug-free-octo-palm-tree
 
+
 Kashf Mashrafi
 
 John Liu
 
 Clara Mohri
-
 
 # L #01: What Does the Data Say?
 
@@ -22,7 +22,13 @@ Clara Mohri
   We will start with an array of size 100, and then increase the size by increments of 5 until we reach 10,000, which is the maximum size of an array of integer allowed by Java. For each size, we will create a new array of the tested nature (in order, in reverse order, random order) and sort it three times. We will record the time right before calling the sort method, and right after the sort method. The average for the three running times will be recorded alongside the size of the array.
 
 ## Results 
-  The raw data results can be founded in the three .csv files contained in this repo..
+  The raw data results can be founded in the three .csv files contained in this repo. Here are the plots of the data, all together and then plotted separately: 
 
+## Running Time Classification
+  Because of our randomized pivot point, there is no best case. There is not best case because we don't know how the pivot point will relate to the array that our quicksort method is sorting. 
+  However, there does seem to be a bad case running time of O(n^2), as evidenced by the reverse-order arrays that overall were very much resembling n^2 in their plot, and also based on the trendline which has an R^2 of nearly 1. This could be because the pivot point chosen at first having to swap every single item from one of it's sides to the other, and then continuing. 
+  Overall, clearly the running time is not O(n^2). We see that already for a sorted array, although the running time is much higher, the running time is not as close to O(n^2) like a reverse order array, because R^2 becomes approximately 0.98. The programs that we had access to did not allow us to create trend lines of O(nlogn), but we still assert that on average the running time for a randomized quick sort is O(nlogn). As the plot of the shuffled (random) arrays' running times shows, we see that there is a lower bound that even resembles a linear function, whereas the upper bound increases in difference with the lower bound as n increases. Arguably, this resembles as O(nlogn) function. Furthermore, if we assume that on average, a random pivot point will divide an array into equal portions, and we know that for each portion partition will be called, which has running time O(n), then we can say that on average, partition will be called logn times. This leads to an average running time of O(nlogn).
+  
 ## Conclusions
+  With a randomized pivot point, there is no true best-case or worst-case, because a randomized pivot point will randomly divide the array. However, an average running time can be assessed, using the reasoning stated in *Running Time Classification*, which justifies that the average expected running time for a randomized quick sort is O(nlogn).
 
