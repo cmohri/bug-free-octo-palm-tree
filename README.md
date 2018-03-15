@@ -19,6 +19,7 @@ Clara Mohri
 
 ## Experiment Methodology
   Because we believe that the above-mentioned cases are the best and worst cases, we will run tests on these cases, and continually change the size of the array so as to see how running time increases when array size increases. We will in no way change the pivot point, because our algorithm uses a randomly generated pivot point.
+  We will start with an array of size 100, and then increase the size by increments of 5 until we reach 10,000, which is the maximum size of an array of integer allowed by Java. For each size, we will create a new array of the tested nature (in order, in reverse order, random order) and sort it three times. We will record the time right before calling the sort method, and right after the sort method. The average for the three running times will be recorded alongside the size of the array.
   
 ## Time Measurements 
 
