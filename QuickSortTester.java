@@ -29,7 +29,7 @@ public class QuickSortTester{
     }
 
     public static void main (String[] args){
-	int[] arr;
+	/*	int[] arr;
 	long start;
 	long end;
 	long sum = 0;
@@ -38,17 +38,44 @@ public class QuickSortTester{
 	    for (int x = 0; x < 3; x++){
 		arr = buildArray(i);
 		shuffle(arr);
+		
 		start = System.nanoTime();
 		QuickSort.qsort(arr);
 		end = System.nanoTime();
+		//QuickSort.printArr(arr);
 		sum += (end - start);
 	    }
 	    System.out.println(sum / 3);
 	    sum = 0;
 	}
+	*/
+	//int[] test = {};
+	int[] arr = buildArray(10000);
+	long start;
+	long end;
+	int sum = 0;
+	QuickSort.shuffle(arr);
 
+	for (int i = 100; i < 10000; i += 50){
+	    int[] test = new int[i];
+	    for (int j = 0; j < 20; j++){	       
 
-	
+		for (int k = 0; k < i; k++){
+		    test[k] = arr[k];
+
+		}
+		//QuickSort.printArr(test);
+		start = System.nanoTime();
+		QuickSort.qsort(test);
+		end = System.nanoTime();
+		//QuickSort.printArr(test);
+		sum += (end - start);
+	    }
+	    
+	    System.out.print(i + ", " );
+	    System.out.println(sum / 20);
+	    sum = 0;
+	}
     }
 
 }
